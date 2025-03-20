@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   def update
     # Get the ID out of params
-    m_id = params.fetch("the_id")
+    m_id = params.fetch("an_id")
 
     #Look up the existing methods
     matching_records = Movie.where({:id => m_id})
